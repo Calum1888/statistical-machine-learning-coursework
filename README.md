@@ -1,10 +1,16 @@
 # Statistical Machine Learning Coursework
 
 ## Overview
-This project applies supervised and unsupervised machine learning techniques to three distinct datasets:
+This coursework project applies supervised and unsupervised machine learning techniques to three distinct datasets:
 - **Blood Cell Classification** using K-Nearest Neighbours (KNN)
 - **Loan Risk Prediction** using Random Forest
 - **Gaia Star Clustering** using UMAP + HDBSCAN
+The aim is to provide a brief overview of a variety of ML techniques to a range of different dataset.
+
+---
+## The Report
+
+`Report.pdf` is the full written report submitted for marking. It achieved a 100% grade.  
 
 ---
 
