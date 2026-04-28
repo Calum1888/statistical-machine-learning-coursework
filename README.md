@@ -19,7 +19,7 @@ The aim is to provide a brief overview of a variety of ML techniques to a range 
 - See `requirements.txt` for full list of dependencies
 
 ### Install dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ---
 
