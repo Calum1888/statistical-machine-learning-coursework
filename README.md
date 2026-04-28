@@ -34,7 +34,7 @@ Three datasets are required to run this project:
 ## Usage
 Run the full pipeline:
 
-python src/pipeline.py
+`python src/pipeline.py`
 
 ---
 
