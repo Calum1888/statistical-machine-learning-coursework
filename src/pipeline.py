@@ -71,6 +71,7 @@ plt.ylabel('Accuracy (%)')
 plt.title('Test Accuracy versus K')
 plt.legend()
 plt.grid(True, alpha=0.3)
+plt.savefig('figures/knn_accuracy.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # select the best k and fit and predict 
@@ -89,6 +90,7 @@ sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
 plt.xlabel('Predicted Cell Type')
 plt.ylabel('Actual Cell Type')
 plt.title('Confusion Matrix (K=15)')
+plt.savefig('figures/cell_confusion_matrix.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 print(knn_best.score(X_test, y_test))
@@ -131,6 +133,7 @@ plot_tree(
     fontsize=10
 )
 plt.title("Single Decision Tree from Random Forest")
+plt.savefig('figures/single_loan_decision_tree.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 
@@ -151,6 +154,7 @@ plt.xlabel('Importance Score', fontsize=12)
 plt.ylabel('Features', fontsize=12)
 plt.grid(axis='x', linestyle='--', alpha=0.6)
 plt.tight_layout()
+plt.savefig('figures/feature_importance_graph.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 ######################################
@@ -178,6 +182,7 @@ plt.xlabel('UMAP Dimension 1')
 plt.ylabel('UMAP Dimension 2')
 plt.title('UMAP Projection')
 plt.tight_layout()
+plt.savefig('figures/umap_projection.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # define and fit the HDBSCAN clustering algorithm on the UMAP reduced data
@@ -202,6 +207,7 @@ plt.ylabel('UMAP Dimension 2')
 plt.legend(title='Cluster Label', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
+plt.savefig('figures/HDBSCAN_UMAP_plot.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 stars_sample['cluster'] = cluster_labels
